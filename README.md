@@ -16,3 +16,4 @@ My favorite species is Vaccinium angustifolium or the Northern Lowbrush Blueberr
 ### Grace 
 My favorite species is Sequoisa sempervirens or the Sequoia trees. Native to California and found in some parts of Oregon,these trees and many others are why I moved to this beautiful place.Born and raised in southern Texas, I always felt disconnected to the outdoors. One summer I visited Sequoia national park and I knew I had to be around bigger trees. Whenever I'm feeling down, I step outside, go for a walk, and admire the beauty of the trees. I feel more connected to nature and the outdoors more than I have ever <3
 
+

@@ -45,3 +45,5 @@ d <- occ_download_get('0006797-240216155721649') %>%
 
 write_csv(d,"data/rawData.csv")
 
+
+

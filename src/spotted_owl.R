@@ -47,3 +47,29 @@ write_csv(d,"data/rawData.csv")
 
 
 
+#cleaning the data
+
+fData <- d |>
+  filter(!is.na(decimalLatitude), !is.na(decimalLongitude))
+
+fData <- fData |>
+  filter(countryCode %in% c("US", "CA", "MX"))
+
+fData <- fData |>
+  filter(!basisOfRecord %in% c("FOSSIL_SPECIMEN", "LIVING_SPECIMEN"))
+
+fData <- fData |>
+  cc_sea(lon = "decimalLongitude", lat = "decimalLatitude")
+
+fData <- fData |>
+  distinct(decimalLatitude,
+           decimalLongitude,
+           speciesKey,
+           datasetKey,
+           .keep_all = TRUE)
+
+write.csv(fData, "data/cleanedData.csv")
+
+
+
+

@@ -1,6 +1,13 @@
-packages <-c("tidyverse","rgbif","usethis","CoordinateCleaner", "leaflet", "mapview", "webshot2") 
+packages <-c("tidyverse",
+             "rgbif",
+             "usethis",
+             "CoordinateCleaner", 
+             "leaflet", 
+             "mapview", 
+             "webshot2") 
 
-# install packages not yet installed
+# Install packages not yet installed
+
 installed_packages <- packages %in% rownames(installed.packages())
 if(any(installed_packages==FALSE)){
   install.packages(packages[!installed_packages])
@@ -13,6 +20,7 @@ invisible(lapply(packages, library, character.only=TRUE))
 usethis:: edit_r_environ()
 
 spottedOwl<-name_backbone(name="Strix occidentalis subsp. caurina")
+
 speciesKey<-spottedOwl$usageKey
 
 occ_download(pred("taxonKey", speciesKey),format = "SIMPLE_CSV")
@@ -47,7 +55,8 @@ write_csv(d,"data/rawData.csv")
 
 
 
-#cleaning the data
+
+# Cleaning the data
 
 fData <- d |>
   filter(!is.na(decimalLatitude), !is.na(decimalLongitude))

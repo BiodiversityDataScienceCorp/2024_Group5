@@ -70,6 +70,3 @@ fData <- fData |>
 
 write.csv(fData, "data/cleanedData.csv")
 
-
-
-

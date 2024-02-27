@@ -47,8 +47,10 @@ map <- leaflet() %>%
             labels = "Strix occidentalis caurina",
             colors = "blue",
             opacity = 0.8)
-
+map
 # Save the map
 mapshot2(map, file = "output/spotted_owl_2.png")
   
-
+# Occurrence points generally indicate the location of a human observation,
+# typically through iNat, or location information for a preserved specimen
+# from a museum, such as MVZ.

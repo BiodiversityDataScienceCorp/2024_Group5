@@ -167,7 +167,7 @@ ggplot() +
   scale_size_area() +
   borders("state") +
   borders("world", colour = "black", fill = NA) + 
-  labs(title = "SDM of Strix occidentalis caurina Under Current Climate Conditions",
+  labs(title = "SDM of Strix occidentalis caurina \nUnder Current Climate Conditions",
        x = "longitude",
        y = "latitude",
        fill = "Environmental Suitability")+ 
@@ -225,7 +225,7 @@ ggplot() +
   scale_size_area() +
   borders("state") +
   borders("world", colour = "black", fill = NA) + 
-  labs(title = "Future SDM of Strix occidentalis caurina Under CMIP6 Climate Conditions",
+  labs(title = "Future SDM of Strix occidentalis caurina \nUnder CMIP6 Climate Conditions",
        x = "longitude",
        y = "latitude",
        fill = "Env Suitability") +

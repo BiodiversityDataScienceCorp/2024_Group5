@@ -131,7 +131,7 @@ nsoCurrentSDM <- dismo::maxent(x = presenceAbsenceEnvDf, ## env conditions
 
 
 # bump up bounding box
-predictExtent <- 1.25 * geographicExtent 
+predictExtent <- 4 * geographicExtent 
 
 # crop the geographic area
 geographicArea <- crop(currentClimRasterStack, predictExtent, snap = "in")
@@ -152,10 +152,11 @@ wrld <- ggplot2::map_data("world")
 
 
 # create bounding box from data frame
-xmax <- max(nsoPredictDf$x)
-xmin <- min(nsoPredictDf$x)
-ymax <- max(nsoPredictDf$y)
-ymin <- min(nsoPredictDf$y)
+# this was eyeballed
+xmax <- -112
+xmin <- -130
+ymax <- 55
+ymin <- 30
 
 # map!
 ggplot() +
@@ -210,10 +211,10 @@ nsoFutureSDM <- raster::predict(nsoCurrentSDM, geographicAreaFutureC6)
 nsoFutureSDMDf <- as.data.frame(nsoFutureSDM, xy=TRUE)
 
 
-xmax <- max(nsoFutureSDMDf$x)
-xmin <- min(nsoFutureSDMDf$x)
-ymax <- max(nsoFutureSDMDf$y)
-ymin <- min(nsoFutureSDMDf$y)
+xmax <- -112
+xmin <- -130
+ymax <- 55
+ymin <- 30
 
 
 ggplot() +

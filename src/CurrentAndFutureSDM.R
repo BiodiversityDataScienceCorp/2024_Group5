@@ -3,7 +3,7 @@
 #### Start Current SDM ######
 # 0. Load packages
 
-source("SRC/packages.R")
+source("src/packages.R")
 
 # 1. Get occurrence Data 
 

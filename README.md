@@ -4,6 +4,7 @@ Phoebe, Clare, Emi, and Grace
 
 Species: Northern Spotted Owl
 
+[![DOI](https://zenodo.org/badge/753735376.svg)](https://zenodo.org/doi/10.5281/zenodo.11051193)
 
 ## Our Favorite Species
 

@@ -2,7 +2,7 @@
 
 Phoebe, Clare, Emi, and Grace
 
-Species: Northern Spotted Owl (?)
+Species: Northern Spotted Owl
 
 
 ## Our Favorite Species
